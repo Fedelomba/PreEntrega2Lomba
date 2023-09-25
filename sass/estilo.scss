@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Poppins:wght@200;300;400&family=Raleway:wght@100&family=Rubik:wght@300&display=swap');
+
+@import "partials/variables";
+@import "partials/header";
+
+
 .padreflex{
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .flexdiv{
@@ -14,7 +18,7 @@
 /* Index */
 
 .fondoboton{
-    background-color: #252525;
+    background-color: $Colorfondo;
 }
 .fotos{
     width: 240px;
@@ -48,7 +52,7 @@ ul{
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-style: italic;
-    color: black;
+    color: $Colortexto;
 }
 
 .h2n{
@@ -58,32 +62,12 @@ ul{
     text-decoration: underline;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
-    color: black;
+    color: $Colortexto;
 }
 .parrafon{
     font-family: 'Inter', sans-serif;
     font-size: 18px;  
     text-align: center;
-}
-
-header {
-    background-color: #252525;
-}
-header img{
-    width: 120px;
-}
-
-body img{
-    width: 240px;
-}
-
-footer img{
-    width: 40px;
-}
-
-.footerlogo{
-    justify-content: flex-end;
-    align-items: end;
 }
 
 .imagenN{
@@ -93,7 +77,6 @@ footer img{
     width: 360px;
     height: 360px;
 }
-
 
 .h2{
     font-family: 'Inter', sans-serif;
@@ -113,7 +96,7 @@ footer img{
     font-family: 'Inter', sans-serif;
     font-size: 22px;
     font-style: italic;
-    color: black;
+    color: $Colortexto;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -122,8 +105,6 @@ footer img{
     font-family: 'Inter', sans-serif;
     font-size: 16px; 
     font-style: normal;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
 /* Picadas */
@@ -133,7 +114,7 @@ footer img{
 }
 
 .carruselubic{
- justify-content: space-around;  
+flex-direction: column;  
 }
 
 .h1p{
@@ -142,7 +123,7 @@ footer img{
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-style: normal;
-    color: black;
+    color: $Colortexto;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -157,7 +138,7 @@ footer img{
     font-family: 'Inter', sans-serif;
     font-size: 22px;
     font-style: italic;
-    color: black;
+    color: $Colortexto;
 }
 
 .pc{
@@ -180,6 +161,17 @@ footer{
     padding: 10px 0px;
 }
 
+body img{
+    width: 240px;
+}
+footer img{
+    width: 40px;
+}
+
+#footerlogo{
+    justify-content: flex-end;
+    align-items: end;
+}
 /* mobile */
 @media only screen and (max-width:500px){
 
@@ -206,7 +198,12 @@ footer{
     }
 }
 
-.gradientes {
-    border: rgb(73, 185, 58) solid 5px;
-    background-image: linear-gradient(to top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+.transicion{
+    text-align: center;
 }
+.transicion:hover{
+    color: $colortransicion;
+    transform: scale(1.5,1.5)
+
+}
+
